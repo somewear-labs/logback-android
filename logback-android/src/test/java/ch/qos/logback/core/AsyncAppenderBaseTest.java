@@ -228,7 +228,6 @@ public class AsyncAppenderBaseTest {
   }
 
   // Interruption of current thread when in doAppend method should not be consumed
-  // by async appender. See also http://jira.qos.ch/browse/LOGBACK-910
   @Test
   public void verifyInterruptionIsNotSwallowed() {
     asyncAppenderBase.addAppender(delayingListAppender);
@@ -241,8 +240,6 @@ public class AsyncAppenderBaseTest {
   }
 
   // Interruption of current thread should not prevent logging.
-  // See also http://jira.qos.ch/browse/LOGBACK-910
-  // and https://jira.qos.ch/browse/LOGBACK-1247
   @Test
   public void verifyInterruptionDoesNotPreventLogging() {
     asyncAppenderBase.addAppender(listAppender);

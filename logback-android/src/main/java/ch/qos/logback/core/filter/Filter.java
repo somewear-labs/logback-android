@@ -26,7 +26,6 @@ import ch.qos.logback.core.spi.LifeCycle;
  * write your own custom filters.
  *
  * <p>For more information about filters, please refer to the online manual at
- * http://logback.qos.ch/manual/filters.html
  *
  * @author Ceki G&uuml;lc&uuml;
  */

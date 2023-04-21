@@ -179,7 +179,6 @@ public class ElementSelector extends ElementPath {
 
     for (int i = 0; i < len; i++) {
       // make Pattern comparisons case insensitive
-      // http://jira.qos.ch/browse/LBCORE-76
       hc ^= get(i).toLowerCase(Locale.US).hashCode();
     }
     return hc;

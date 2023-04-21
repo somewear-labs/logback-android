@@ -207,7 +207,6 @@ public class LoggingEvent implements ILoggingEvent {
   public void prepareForDeferredProcessing() {
     this.getFormattedMessage();
     this.getThreadName();
-    // fixes http://jira.qos.ch/browse/LBCLASSIC-104
     this.getMDCPropertyMap();
   }
 

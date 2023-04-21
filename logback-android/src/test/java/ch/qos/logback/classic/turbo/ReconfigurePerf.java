@@ -38,7 +38,6 @@ public class ReconfigurePerf {
   //final static int LOOP_LEN = 1000 * 1000;
 
   // the space in the file name mandated by
-  // http://jira.qos.ch/browse/LBCORE-119
   final static String CONF_FILE_AS_STR = ClassicTestConstants.INPUT_PREFIX
       + "turbo/scan_perf.xml";
 

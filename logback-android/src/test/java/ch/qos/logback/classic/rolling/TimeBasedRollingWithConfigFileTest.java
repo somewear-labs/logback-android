@@ -127,7 +127,6 @@ public class TimeBasedRollingWithConfigFileTest extends
     loadConfig(ClassicTestConstants.JORAN_INPUT_PREFIX + "rolling/" + testId
             + ".xml");
 
-    // Test http://jira.qos.ch/browse/LOGBACK-1236
     statusChecker.assertNoMatch(CoreConstants.SIZE_AND_TIME_BASED_FNATP_IS_DEPRECATED);
 
     Logger root = lc.getLogger(Logger.ROOT_LOGGER_NAME);

@@ -59,7 +59,6 @@ public class ReconfigureOnChangeTest {
   int diff = RandomUtil.getPositiveInt();
 
   // the space in the file name mandated by
-  // http://jira.qos.ch/browse/LBCORE-119
   final static String SCAN1_FILE_AS_STR = ClassicTestConstants.INPUT_PREFIX
           + "turbo/scan 1.xml";
 
@@ -177,7 +176,6 @@ public class ReconfigureOnChangeTest {
     assertThatListContainsFile(fileList, innerFile);
   }
 
-  // See also http://jira.qos.ch/browse/LOGBACK-338
   @Test
   public void includeScanViaInputStreamSuppliedConfigFile() throws IOException, JoranException, InterruptedException {
     String configurationStr = "<configuration scan=\"true\" scanPeriod=\"50 millisecond\"><include resource=\"asResource/inner1.xml\"/></configuration>";

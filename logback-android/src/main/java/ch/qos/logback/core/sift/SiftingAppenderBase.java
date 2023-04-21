@@ -128,7 +128,6 @@ public abstract class SiftingAppenderBase<E> extends
   // for example when executing a command which has its own nested appender
   // and the command also cleans up after itself. However, an open file appender
   // will prevent the folder from being deleted
-  // see http://www.qos.ch/pipermail/logback-user/2010-March/001487.html
 
   /**
    * @since 0.9.19

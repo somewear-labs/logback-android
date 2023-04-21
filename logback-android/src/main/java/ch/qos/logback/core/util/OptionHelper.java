@@ -86,7 +86,6 @@ public class OptionHelper {
   }
 
   /**
-   * See  http://logback.qos.ch/manual/configuration.html#variableSubstitution
    * @param input string to be evaluated
    * @param pc0 primary property container
    * @param pc1 secondary property container

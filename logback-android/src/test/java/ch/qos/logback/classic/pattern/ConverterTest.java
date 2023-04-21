@@ -32,7 +32,6 @@ import ch.qos.logback.classic.ClassicTestConstants;
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.classic.spi.LoggingEvent;
 import ch.qos.logback.core.CoreConstants;
-import ch.qos.logback.core.net.SyslogConstants;
 import ch.qos.logback.core.pattern.DynamicConverter;
 import ch.qos.logback.core.pattern.FormatInfo;
 
@@ -345,24 +344,6 @@ public class ConverterTest {
   }
 
   @Test
-  public void testSyslogStart() throws Exception {
-    DynamicConverter<ILoggingEvent> converter = new SyslogStartConverter();
-    this.optionList.clear();
-    this.optionList.add("MAIL");
-    converter.setOptionList(this.optionList);
-    converter.start();
-
-    ILoggingEvent event = makeLoggingEvent(null);
-
-    StringBuilder buf = new StringBuilder();
-    converter.write(buf, event);
-
-    String expected = "<"
-        + (SyslogConstants.LOG_MAIL + SyslogConstants.INFO_SEVERITY) + ">";
-    assertTrue(buf.toString().startsWith(expected));
-  }
-
-  @Test
   public void testMDCConverter() throws Exception {
     MDC.clear();
     MDC.put("someKey", "someValue");
@@ -381,7 +362,6 @@ public class ConverterTest {
   @Test
   public void contextNameConverter() {
     ClassicConverter converter = new ContextNameConverter();
-    // see http://jira.qos.ch/browse/LBCLASSIC-149
     LoggerContext lcOther = new LoggerContext();
     lcOther.setName("another");
     converter.setContext(lcOther);

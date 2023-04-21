@@ -39,7 +39,6 @@ public class TargetLengthBasedClassNameAbbreviator implements Abbreviator {
 
     int[] dotIndexesArray = new int[ClassicConstants.MAX_DOTS];
     // a.b.c contains 2 dots but 2+1 parts.
-    // see also http://jira.qos.ch/browse/LBCLASSIC-110
     int[] lengthArray = new int[ClassicConstants.MAX_DOTS + 1];
 
     int dotCount = computeDotIndexes(fqClassName, dotIndexesArray);

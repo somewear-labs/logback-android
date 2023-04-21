@@ -70,7 +70,6 @@ public class TimeBasedFileNamingAndTriggeringPolicyBaseTest {
   }
 
   // see "log rollover should be configurable using %d multiple times in file name pattern"
-  // http://jira.qos.ch/browse/LBCORE-242
 
   @Test
   public void multiDate() {

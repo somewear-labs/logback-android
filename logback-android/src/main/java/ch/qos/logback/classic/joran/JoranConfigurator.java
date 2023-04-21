@@ -66,9 +66,6 @@ public class JoranConfigurator extends JoranConfiguratorBase<ILoggingEvent> {
 
     rs.addRule(new ElementSelector("configuration/includes"), new FindIncludeAction());
     rs.addRule(new ElementSelector("configuration/includes/include"), new ConditionalIncludeAction());
-
-    rs.addRule(new ElementSelector("configuration/receiver"),
-        new ReceiverAction());
   }
 
   @Override

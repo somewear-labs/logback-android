@@ -2,7 +2,7 @@
 
 ## Overview
 
-`logback-android` is a lite version of [`logback`](http://logback.qos.ch) that runs on Android. This library provides a highly configurable logging framework for Android apps, supporting multiple log destinations simultaneously:
+`logback-android` is a lite version of logback that runs on Android. This library provides a highly configurable logging framework for Android apps, supporting multiple log destinations simultaneously:
 
  * files
  * SQLite databases

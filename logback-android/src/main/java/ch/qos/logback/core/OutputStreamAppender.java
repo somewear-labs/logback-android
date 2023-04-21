@@ -31,7 +31,6 @@ import ch.qos.logback.core.status.ErrorStatus;
  * provides basic services that other appenders build upon.
  *
  * For more information about this appender, please refer to the online manual
- * at http://logback.qos.ch/manual/appenders.html#OutputStreamAppender
  *
  * @author Ceki G&uuml;lc&uuml;
  */

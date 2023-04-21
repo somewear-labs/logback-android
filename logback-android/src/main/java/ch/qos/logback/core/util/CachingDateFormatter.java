@@ -45,7 +45,6 @@ public class CachingDateFormatter {
 
     // SimpleDateFormat is not thread safe.
 
-    // See also the discussion in http://jira.qos.ch/browse/LBCLASSIC-36
     // DateFormattingThreadedThroughputCalculator and SelectiveDateFormattingRunnable
     // are also note worthy
 

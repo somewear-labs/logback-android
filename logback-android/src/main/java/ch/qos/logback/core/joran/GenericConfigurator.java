@@ -52,8 +52,6 @@ public abstract class GenericConfigurator extends ContextAwareBase {
     try {
       informContextOfURLUsedForConfiguration(getContext(), url);
       URLConnection urlConnection = url.openConnection();
-      // per http://jira.qos.ch/browse/LBCORE-105
-      // per http://jira.qos.ch/browse/LBCORE-127
       urlConnection.setUseCaches(false);
 
       // this closes the stream for us

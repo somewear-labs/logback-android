@@ -28,7 +28,6 @@ import ch.qos.logback.core.status.WarnStatus;
  * target is <code>System.out</code>.
  * <p>
  * For more information about this appender, please refer to the online manual
- * at http://logback.qos.ch/manual/appenders.html#ConsoleAppender
  *
  * @author Ceki G&uuml;lc&uuml;
  * @author Tom SH Liu

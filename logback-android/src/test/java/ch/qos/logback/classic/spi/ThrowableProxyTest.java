@@ -137,7 +137,6 @@ public class ThrowableProxyTest {
     verify(ex);
   }
 
-  // see also http://jira.qos.ch/browse/LBCLASSIC-216
   @Test
   public void nullSTE() {
     Throwable t = new Exception("someMethodWithNullException") {

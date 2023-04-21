@@ -67,7 +67,7 @@ fetches the remote schema definition.
             </xsd:element>
             <xsd:element name="conversionRule" type="ConversionRule">
                 <xsd:annotation>
-                    <xsd:documentation>Creates <a href="http://logback.qos.ch/manual/layouts.html#customConversionSpecifier">conversion specifier</a> used in pattern layouts, which creates string based on given log event</xsd:documentation>
+                    <xsd:documentation>Creates conversion specifier used in pattern layouts, which creates string based on given log event</xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
 <!--            <xsd:element name="newRule" type="NewRule">-->
@@ -299,12 +299,12 @@ fetches the remote schema definition.
             </xsd:element>
             <xsd:element name="minIndex" minOccurs="0" type="xsd:unsignedInt">
                 <xsd:annotation>
-                    <xsd:documentation>Lower bound for window's index (<a href="http://logback.qos.ch/manual/appenders.html#FixedWindowRollingPolicy"><code>FixedWindowRollingPolicy</code></a>)</xsd:documentation>
+                    <xsd:documentation>Lower bound for window's index (<code>FixedWindowRollingPolicy</code>)</xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
             <xsd:element name="maxIndex" minOccurs="0" type="xsd:unsignedInt">
                 <xsd:annotation>
-                    <xsd:documentation>Upper bound for window's index (<a href="http://logback.qos.ch/manual/appenders.html#FixedWindowRollingPolicy"><code>FixedWindowRollingPolicy</code></a>)</xsd:documentation>
+                    <xsd:documentation>Upper bound for window's index (<code>FixedWindowRollingPolicy</code>)</xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
             <xsd:element name="timeBasedFileNamingAndTriggeringPolicy" minOccurs="0" type="TriggeringPolicy">

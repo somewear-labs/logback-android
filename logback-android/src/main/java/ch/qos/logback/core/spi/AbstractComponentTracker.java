@@ -213,7 +213,6 @@ abstract public class AbstractComponentTracker<C> implements ComponentTracker<C>
 
   private boolean isEntryStale(Entry<C> entry, long now) {
     // stopped or improperly started appenders are considered stale
-    // see also http://jira.qos.ch/browse/LBCLASSIC-316
     C c = entry.component;
     if (isComponentStale(c))
       return true;

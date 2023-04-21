@@ -28,7 +28,6 @@ import static ch.qos.logback.core.CoreConstants.CODES_URL;
  * according to a fixed window algorithm.
  *
  * For more information about this policy, please refer to the online manual at
- * http://logback.qos.ch/manual/appenders.html#FixedWindowRollingPolicy
  *
  * @author Ceki G&uuml;lc&uuml;
  */

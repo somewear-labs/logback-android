@@ -135,7 +135,6 @@ public class LogbackMDCAdapterTest {
 
   }
 
-  // see also http://jira.qos.ch/browse/LBCLASSIC-253
   @Test
   public void clearOnChildThreadShouldNotAffectParent() throws InterruptedException {
     String firstKey = "x" + diff;
@@ -158,7 +157,6 @@ public class LogbackMDCAdapterTest {
     assertEquals(firstKey + A_SUFFIX, mdcAdapter.get(firstKey));
   }
 
-  // see http://jira.qos.ch/browse/LBCLASSIC-289
   // this test used to fail without synchronization code in LogbackMDCAdapter
   @Test
   public void nearSimultaneousPutsShouldNotCauseConcurrentModificationException() throws InterruptedException {
