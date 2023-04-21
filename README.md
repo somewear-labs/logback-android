@@ -1,5 +1,16 @@
 # logback-android [![GitHub release](https://img.shields.io/github/release/tony19/logback-android.svg?maxAge=2592000)](https://github.com/tony19/logback-android/releases/) <a href="https://android-arsenal.com/api?level=9"><img alt="API" src="https://img.shields.io/badge/API-9%2B-brightgreen.svg?style=flat"/></a> [![CircleCI](https://circleci.com/gh/tony19/logback-android/tree/main.svg?style=svg)](https://circleci.com/gh/tony19/logback-android/tree/main) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/4fc7dae87f034dd181e4228acec33221)](https://www.codacy.com/gh/tony19/logback-android/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tony19/logback-android&amp;utm_campaign=Badge_Grade)
 
+# Somewear
+
+### Publish
+```bash
+# Build
+./gradlew assembleRelease -x test -PVERSION_NAME=3.0.1-SNAPSHOT
+
+# Publish to maven repo
+mvn deploy:deploy-file -DgroupId=com.github.somewear-labs -DartifactId=logback-android -Dversion=3.0.1-SNAPSHOT -Dpackaging=aar -Dfile=logback-android/build/outputs/aar/logback-android-release.aar -DrepositoryId=somewear-artifacts -Durl=https://somewear-artifacts.appspot.com
+```
+
 ## Overview
 
 `logback-android` is a lite version of logback that runs on Android. This library provides a highly configurable logging framework for Android apps, supporting multiple log destinations simultaneously:
