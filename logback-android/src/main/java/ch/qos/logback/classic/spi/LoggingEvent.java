@@ -48,6 +48,16 @@ import org.slf4j.spi.MDCAdapter;
  */
 public class LoggingEvent implements ILoggingEvent {
 
+  public interface TimeProvider {
+    long currentTimeMillis();
+  }
+
+  public static TimeProvider DEFAULT_TIME_PROVIDER = new TimeProvider() {
+    public long currentTimeMillis() {
+      return System.currentTimeMillis();
+    }
+  };
+
   /**
    * Fully qualified name of the calling Logger class. This field does not
    * survive serialization.
@@ -125,7 +135,7 @@ public class LoggingEvent implements ILoggingEvent {
       }
     }
 
-    timeStamp = System.currentTimeMillis();
+    timeStamp = DEFAULT_TIME_PROVIDER.currentTimeMillis();
   }
 
   private Throwable extractThrowableAnRearrangeArguments(Object[] argArray) {
@@ -207,7 +217,6 @@ public class LoggingEvent implements ILoggingEvent {
   public void prepareForDeferredProcessing() {
     this.getFormattedMessage();
     this.getThreadName();
-    // fixes http://jira.qos.ch/browse/LBCLASSIC-104
     this.getMDCPropertyMap();
   }
 

@@ -36,7 +36,6 @@ import org.slf4j.spi.MDCAdapter;
  * its parent.
  * <p>
  * For more information about MDC, please refer to the online manual at
- * http://logback.qos.ch/manual/mdc.html
  *
  * @author Ceki G&uuml;lc&uuml;
  */
@@ -48,7 +47,6 @@ public final class LogbackMDCAdapter implements MDCAdapter {
   // operation was a 'get'. Get operations never necessitate a copy nor
   // successive 'put/remove' operations, only a get followed by a 'put/remove'
   // requires copying the map.
-  // See http://jira.qos.ch/browse/LBCLASSIC-254 for the original discussion.
 
   // We no longer use CopyOnInheritThreadLocal in order to solve LBCLASSIC-183
   // Initially the contents of the thread local in parent and child threads

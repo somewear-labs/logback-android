@@ -170,7 +170,6 @@ public class IncludeActionTest {
     assertTrue(statusChecker.containsException(SAXParseException.class));
 
     // we like to erase the temp file in order to see
-    // if http://jira.qos.ch/browse/LBCORE-122 was fixed
     File f = new File(tmpOut);
     assertTrue(f.exists());
     assertTrue(f.delete());
@@ -192,7 +191,7 @@ public class IncludeActionTest {
 
   @Test
   public void malformedURL() throws JoranException {
-    System.setProperty(INCLUDE_KEY, "htp://logback.qos.ch");
+    System.setProperty(INCLUDE_KEY, "htp://example.com");
     tc.doConfigure(TOP_BY_URL);
     assertEquals(Status.ERROR, statusChecker.getHighestLevel(0));
     assertTrue(statusChecker.containsException(MalformedURLException.class));

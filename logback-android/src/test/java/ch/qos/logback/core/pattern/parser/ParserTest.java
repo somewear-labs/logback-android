@@ -237,7 +237,6 @@ public class ParserTest {
     assertEquals(witness, t);
   }
 
-  // see http://jira.qos.ch/browse/LBCORE-180
   @Test
   public void keywordGluedToLitteral() throws Exception {
     Parser<Object> p = new Parser("%x{}a");

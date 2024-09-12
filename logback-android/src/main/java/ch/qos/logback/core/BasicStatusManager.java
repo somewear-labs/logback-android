@@ -33,7 +33,6 @@ public class BasicStatusManager implements StatusManager {
 
   int count = 0;
 
-  // protected access was requested in http://jira.qos.ch/browse/LBCORE-36
   final protected List<Status> statusList = new ArrayList<Status>();
   final protected CyclicBuffer<Status> tailBuffer = new CyclicBuffer<Status>(
       TAIL_SIZE);
@@ -41,7 +40,6 @@ public class BasicStatusManager implements StatusManager {
 
   int level = Status.INFO;
 
-  // protected access was requested in http://jira.qos.ch/browse/LBCORE-36
   final protected List<StatusListener> statusListenerList = new ArrayList<StatusListener>();
   final protected LogbackLock statusListenerListLock = new LogbackLock();
 

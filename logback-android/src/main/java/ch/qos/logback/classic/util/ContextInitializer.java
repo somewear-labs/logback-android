@@ -29,7 +29,7 @@ import ch.qos.logback.core.util.OptionHelper;
 import ch.qos.logback.core.util.StatusListenerConfigHelper;
 
 // contributors
-// Ted Graham, Matt Fowles, see also http://jira.qos.ch/browse/LBCORE-32
+// Ted Graham, Matt Fowles, see also
 
 /**
  * This class contains logback's logic for automatic configuration

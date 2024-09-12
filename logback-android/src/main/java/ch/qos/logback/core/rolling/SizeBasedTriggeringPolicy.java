@@ -25,14 +25,13 @@ import ch.qos.logback.core.util.FileSize;
  * SizeBasedTriggeringPolicy rolls the file and creates a new one.
  * 
  * For more information about this policy, please refer to the online manual at
- * http://logback.qos.ch/manual/appenders.html#SizeBasedTriggeringPolicy
- * 
+ *
  * @author Ceki G&uuml;lc&uuml;
  * 
  */
 public class SizeBasedTriggeringPolicy<E> extends TriggeringPolicyBase<E> {
 
-  public static final String SEE_SIZE_FORMAT = "http://logback.qos.ch/codes.html#sbtp_size_format";
+  public static final String SEE_SIZE_FORMAT = "sbtp_size_format";
   /**
    * The default maximum file size.
    */

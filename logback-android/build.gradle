@@ -6,8 +6,8 @@ android {
     buildToolsVersion '30.0.3'
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_6
-        targetCompatibility JavaVersion.VERSION_1_6
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
     }
 
     defaultConfig {
@@ -66,16 +66,9 @@ dependencies {
     testImplementation "org.slf4j:log4j-over-slf4j:${slf4jVersion}"
     testImplementation "org.slf4j:slf4j-api:${slf4jVersion}:tests"
     testImplementation "org.slf4j:slf4j-ext:${slf4jVersion}"
-    testImplementation(group: 'org.subethamail', name: 'subethasmtp', version: '3.1.7') {
-        exclude(module: 'slf4j-api')
-    }
     testImplementation project(path: ':logback-android')
 
     compileOnly "org.slf4j:slf4j-api:${slf4jVersion}"
-
-    // For SMTPAppender
-    compileOnly 'com.sun.mail:android-mail:1.6.7'
-    compileOnly 'com.sun.mail:android-activation:1.6.7'
 }
 
 allprojects {

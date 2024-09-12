@@ -29,7 +29,6 @@ import static junit.framework.Assert.assertEquals;
 public class ConfigurationWatchListTest {
 
   @Test
-  // See http://jira.qos.ch/browse/LBCORE-119
   public void fileToURLAndBack() throws MalformedURLException {
     File file = new File("a b.xml");
     URL url = file.toURI().toURL();

@@ -71,7 +71,6 @@ public class ContextBase implements Context, LifeCycle {
    * @param statusManager the new status manager
    */
   public void setStatusManager(StatusManager statusManager) {
-    // this method was added in response to http://jira.qos.ch/browse/LBCORE-35
     if (statusManager == null) {
       throw new IllegalArgumentException("null StatusManager not allowed");
     }

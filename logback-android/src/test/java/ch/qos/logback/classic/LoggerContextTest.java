@@ -193,7 +193,6 @@ public class LoggerContextTest {
     assertNull(ab.getLevel());
   }
 
-  // http://jira.qos.ch/browse/LBCLASSIC-89
   @Test
   public void turboFilterStopOnReset() {
     NOPTurboFilter nopTF = new NOPTurboFilter();
@@ -261,7 +260,6 @@ public class LoggerContextTest {
 
   }
 
-  // http://jira.qos.ch/browse/LOGBACK-142
   @Test
   public void concurrentModification() {
     final int runLen = 100;

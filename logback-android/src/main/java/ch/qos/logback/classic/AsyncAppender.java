@@ -20,7 +20,7 @@ import ch.qos.logback.core.AsyncAppenderBase;
 
 /**
  * In order to optimize performance this appender deems events of level TRACE, DEBUG and INFO as discardable. See the
- * <a href="http://logback.qos.ch/manual/appenders.html#AsyncAppender">chapter on appenders</a> in the manual for
+ * chapter on appenders in the manual for
  * further information.
  *
  *

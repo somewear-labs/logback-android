@@ -76,7 +76,6 @@ public class DuplicateMessageFilterTest {
 
   @Test
   // isXXXEnabled invokes decide with a null format
-  // http://jira.qos.ch/browse/LBCLASSIC-134
   public void nullFormat() {
     DuplicateMessageFilter dmf = new DuplicateMessageFilter();
     dmf.setAllowedRepetitions(0);

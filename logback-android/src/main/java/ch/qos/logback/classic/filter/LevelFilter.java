@@ -25,8 +25,7 @@ import ch.qos.logback.core.spi.FilterReply;
 
  * <p>
  * For more information about this filter, please refer to the online manual at
- * http://logback.qos.ch/manual/filters.html#levelFilter
- * 
+ *
  * @author Ceki G&uuml;lc&uuml;
  * @author S&eacute;bastien Pennec
  */

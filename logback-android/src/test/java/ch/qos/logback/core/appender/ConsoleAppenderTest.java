@@ -114,7 +114,6 @@ public class ConsoleAppenderTest extends AbstractAppenderTest<Object> {
     assertEquals(DummyLayout.DUMMY + "CLOSED", tee.toString());
   }
 
-  // See http://jira.qos.ch/browse/LBCORE-143
   @Test
   public void changeInConsole() {
     ConsoleAppender<Object> ca = (ConsoleAppender<Object>) getAppender();

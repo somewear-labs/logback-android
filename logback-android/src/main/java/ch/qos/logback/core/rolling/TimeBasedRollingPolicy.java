@@ -34,7 +34,6 @@ import static ch.qos.logback.core.CoreConstants.UNBOUND_HISTORY;
  * specify that the roll over occur once per day, per week or per month.
  *
  * <p>For more information, please refer to the online manual at
- * http://logback.qos.ch/manual/appenders.html#TimeBasedRollingPolicy
  *
  * @author Ceki G&uuml;lc&uuml;
  */

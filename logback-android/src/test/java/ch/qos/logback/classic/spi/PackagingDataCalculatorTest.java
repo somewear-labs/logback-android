@@ -108,7 +108,6 @@ public class PackagingDataCalculatorTest {
   }
 
   @Test
-  // Test http://jira.qos.ch/browse/LBCLASSIC-125
   public void noClassDefFoundError_LBCLASSIC_125Test()
       throws MalformedURLException {
     ClassLoader cl = (URLClassLoader) makeBogusClassLoader();

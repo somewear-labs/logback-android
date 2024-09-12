@@ -60,7 +60,6 @@ public class FileNamePattern extends ContextAwareBase {
 
   void parse() {
     try {
-      // http://jira.qos.ch/browse/LOGBACK-197
       // we escape ')' for parsing purposes. Note that the original pattern is preserved
       // because it is shown to the user in status messages. We don't want the escaped version
       // to leak out.

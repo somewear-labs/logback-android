@@ -31,7 +31,6 @@ import java.util.concurrent.BlockingQueue;
  * This appender buffers events in a {@link BlockingQueue}. {@link ch.qos.logback.core.AsyncAppenderBase.Worker} thread created by this appender takes
  * events from the head of the queue, and dispatches them to the single appender attached to this appender.
  * <p>
- * Please refer to the <a href="http://logback.qos.ch/manual/appenders.html#AsyncAppender">logback manual</a> for
  * further information about this appender.</p>
  *
  * @param <E> type of object to log

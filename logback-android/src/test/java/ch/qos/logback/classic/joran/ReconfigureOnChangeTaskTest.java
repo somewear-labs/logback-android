@@ -70,7 +70,6 @@ public class ReconfigureOnChangeTaskTest {
     int diff = RandomUtil.getPositiveInt();
 
     // the space in the file name mandated by
-    // http://jira.qos.ch/browse/LBCORE-119
     final static String SCAN1_FILE_AS_STR = JORAN_INPUT_PREFIX + "roct/scan 1.xml";
 
     final static String SCAN_LOGBACK_474_FILE_AS_STR = JORAN_INPUT_PREFIX + "roct/scan_logback_474.xml";
@@ -156,7 +155,6 @@ public class ReconfigureOnChangeTaskTest {
         assertThat(filenameList, hasItem(topLevelFile.getAbsolutePath()));
     }
 
-    // See also http://jira.qos.ch/browse/LOGBACK-338
     @Test(timeout = 4000L)
     public void reconfigurationIsNotPossibleInTheAbsenceOfATopFile() throws IOException, JoranException {
         String configurationStr = "<configuration scan=\"true\" scanPeriod=\"50 millisecond\"><include resource=\"asResource/inner1.xml\"/></configuration>";

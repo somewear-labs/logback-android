@@ -33,7 +33,6 @@ import static ch.qos.logback.core.CoreConstants.CODES_URL;
  * <p>
  *
  * For more information about this appender, please refer to the online manual
- * at http://logback.qos.ch/manual/appenders.html#RollingFileAppender
  *
  * @author Heinz Richter
  * @author Ceki G&uuml;lc&uuml;
@@ -80,7 +79,6 @@ public class RollingFileAppender<E> extends FileAppender<E> {
       return;
     }
 
-    // sanity check for http://jira.qos.ch/browse/LOGBACK-796
     if (checkForFileAndPatternCollisions()) {
       addError("File property collides with fileNamePattern. Aborting.");
       addError(MORE_INFO_PREFIX + COLLISION_URL);
@@ -161,7 +159,6 @@ public class RollingFileAppender<E> extends FileAppender<E> {
 
   @Override
   public void setFile(String file) {
-    // http://jira.qos.ch/browse/LBCORE-94
     // allow setting the file name to null if mandated by prudent mode
     if (file != null && ((triggeringPolicy != null) || (rollingPolicy != null))) {
       addError("File property must be set before any triggeringPolicy or rollingPolicy properties");

@@ -32,7 +32,6 @@ public class FileFilterUtilTest {
 
   Context context = new ContextBase();
 
-  // see also http://jira.qos.ch/browse/LBCORE-164
   @Test
   public void findHighestCounterTest() throws ParseException {
     String[] sa = new String[]{"c:/log/debug-old-2010-08-10.0.log",

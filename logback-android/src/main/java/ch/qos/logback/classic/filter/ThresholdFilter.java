@@ -30,7 +30,6 @@ import ch.qos.logback.core.spi.FilterReply;
  * filter chain process the event.
  * 
  * For more information about filters, please refer to the online manual at
- * http://logback.qos.ch/manual/filters.html#thresholdFilter
  *
  * @author S&eacute;bastien Pennec
  */
